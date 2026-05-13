@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Instrument Sans";
+  src: url(/Fonts/InstrumentSans.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Instrument Sans", "Segoe UI", sans-serif;
+  background-color: #f1f1f1;
+  color: #1d1e1e;
+}
+
+.site-header,
+.section-title,
+.site-footer {
+  background: #0f6a38;
+  color: #d4af37;
+  width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 34px;
+}
+.site-header h1 {
+  font-size: clamp(2rem, 2.8vw, 2.8rem);
+  font-weight: 700;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.22);
+}
+.site-header ul {
+  list-style: none;
+  display: flex;
+  gap: 38px;
+}
+.site-header ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.15rem;
+  font-weight: 600;
+}
+.site-header ul a:hover {
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.22);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1.15fr 1.15fr 0.85fr;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 44px;
+  min-height: 320px;
+}
+
+.card {
+  background: #f3e7c4;
+  border-radius: 12px;
+  box-sizing: 0 6px 12px rgba(0, 0, 0, 0.22);
+}
+
+.short-intro {
+  max-width: 400px;
+  max-height: 220px;
+  padding: 26px;
+}
+.short-intro p {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.short-intro p:nth-child(3) {
+  margin: 16px 0 22px;
+}
+
+.more-about {
+  max-width: 450px;
+  max-height: 220px;
+  padding: 26px;
+}
+.more-about article h2 {
+  color: #1d8f4f;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.more-about article p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+.projects-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #d4af37;
+  background: #1d8f4f;
+  border-radius: 999px;
+  padding: 10px 28px;
+}
+.projects-btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.22);
+  font-weight: 900;
+}
+
+.dev-picto {
+  width: min(330px, 78%);
+  justify-self: center;
+}
+
+.section-title {
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: clamp(180px, 24vw, 35vw) repeat(2, clamp(180px, 32vw, 55vw));
+  gap: 26px;
+  padding: 44px 44px 50px;
+  align-items: center;
+}
+
+.avatar {
+  width: 155px;
+  justify-self: center;
+}
+
+.skill-card {
+  min-height: 150px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  color: #1d8f4f;
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.skill-card p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  gap: 30px;
+  padding: 44px 44px 56px;
+  align-items: center;
+}
+
+.project-card {
+  display: grid;
+  place-items: center;
+  height: 24rem;
+  width: 45rem;
+}
+.project-card img {
+  width: 41rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+@media screen and (max-width: 900px) {
+  .site-header {
+    padding: 12px 16px;
+  }
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+  .site-header ul {
+    gap: 16px;
+  }
+  .site-header a {
+    font-size: 0.95rem;
+  }
+  .home {
+    grid-template-columns: 1fr auto;
+    padding: 24px 16px;
+    min-height: auto;
+    gap: 16px;
+  }
+  .short-intro {
+    padding: 16px;
+  }
+  .short-intro p {
+    font-size: 1rem;
+  }
+  .projects-btn {
+    font-size: 0.86rem;
+    padding: 8px 16px;
+  }
+  .dev-picto {
+    width: 120px;
+  }
+  .section-title {
+    padding: 10px 12px;
+  }
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  .skills-grid {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 14px;
+    padding: 22px 16px 28px;
+  }
+  .avatar {
+    width: 84px;
+    align-self: start;
+    margin-top: 4px;
+  }
+  .skill-card {
+    min-height: 95px;
+    padding: 12px;
+  }
+  .skill-card h3 {
+    font-size: clamp(0.95rem, 2.5vw, 1.35rem);
+    margin-bottom: 8px;
+  }
+  .skill-card p {
+    font-size: clamp(0.85rem, 2.2vw, 1.15rem);
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 22px 16px 28px;
+  }
+  .project-card {
+    min-height: 90px;
+    font-size: 1.9rem;
+    min-width: 2rem;
+  }
+  .site-footer {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 14px;
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+    }
