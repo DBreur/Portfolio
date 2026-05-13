@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Instrument Sans";
+    src: url(/Fonts/InstrumentSans.ttf);
+}
+$bg-color: #f1f1f1;
+$bar: #0f6a38;
+$accent: #d4af37;
+$card: #f3e7c4;
+$text: #1d1e1e;
+$muted-green: #1d8f4f;
+$shadow: 0 6px 12px rgba(0, 0, 0, 0.22);
+$font: "Instrument Sans", "Segoe UI", sans-serif;
