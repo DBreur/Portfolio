@@ -295,9 +295,6 @@ main {
 }
 
 .site-footer {
-  position: sticky;
-  bottom: 0;
-  z-index: 1000;
   text-align: center;
   padding: 18px 20px;
   font-size: 1rem;
@@ -400,6 +397,10 @@ main {
 }
 
 @media screen and (max-width: 620px) {
+  .site-header {
+    position: static;
+  }
+
   .site-header h1 {
     font-size: 1.35rem;
     line-height: 1.1;
