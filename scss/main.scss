@@ -150,8 +150,10 @@ main {
 
 .avatar {
   width: 155px;
+  height: 155px;
+  object-fit: cover;
   justify-self: center;
-  border-radius: 75px;
+  border-radius: 50%;
 }
 
 .skill-card {
