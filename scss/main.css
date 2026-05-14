@@ -144,6 +144,7 @@ main {
 .avatar {
   width: 155px;
   height: 155px;
+  aspect-ratio: 1/1;
   object-fit: cover;
   justify-self: center;
   border-radius: 50% !important;
@@ -344,6 +345,7 @@ main {
   }
   .avatar {
     width: 84px;
+    height: 84px;
     grid-column: 1/-1;
     align-self: center;
     margin-top: 0;
