@@ -23,7 +23,7 @@ $projects = getProjects();
 <body>
     <a class="skip-link" href="#main-content">Ga naar hoofdinhoud</a>
     <header class="site-header">
-        <h1>MY POoRTFOLIO</h1>
+        <h1>MY PORTFOLIO</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
