@@ -15,7 +15,7 @@ $projects = getProjects();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Pppppportfolio</title>
     <link rel="icon" type="image/png" href="img/portfolio-web-logo.png?v=202605141451">
     <link rel="apple-touch-icon" href="img/portfolio-web-logo.png?v=202605141451">
     <link rel="stylesheet" href="scss/main.css">
