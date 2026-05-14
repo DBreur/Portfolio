@@ -60,7 +60,7 @@ $projects = getProjects();
         </section>
 
         <section class="skills-grid">
-            <img class="avatar" src="img/avatar.png" alt="Avatar">
+            <img class="avatar" src="img/Selfie.jpeg" alt="Selfie">
 
             <?php if (count($skills) > 0): ?>
                 <?php foreach ($skills as $skill): ?>
