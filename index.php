@@ -15,7 +15,7 @@ $projects = getProjects();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pppppportfolio</title>
+    <title>My Portfolio</title>
     <link rel="icon" type="image/png" href="img/portfolio-web-logo.png?v=202605141451">
     <link rel="apple-touch-icon" href="img/portfolio-web-logo.png?v=202605141451">
     <link rel="stylesheet" href="scss/main.css">
@@ -23,7 +23,7 @@ $projects = getProjects();
 <body>
     <a class="skip-link" href="#main-content">Ga naar hoofdinhoud</a>
     <header class="site-header">
-        <h1>MY PORTFOLIO</h1>
+        <h1>MY POoRTFOLIO</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
